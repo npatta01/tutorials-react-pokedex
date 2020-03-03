@@ -1,7 +1,8 @@
 {
-  "name": "pokedex-app",
+  "name": "tutorials-react-pokedex",
   "version": "0.0.1",
   "description": "React and TypeScript example pokedex app",
+  "homepage": "http://npatta01.github.io/tutorials-react-pokedex",
   "private": true,
   "dependencies": {
     "react": "^16.13.0",
@@ -14,7 +15,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cp build/index.html build/404.html",
+
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
