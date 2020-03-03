@@ -2,6 +2,8 @@ import * as React from "react";
 import styles from "./PokemonCard.module.css";
 import { IPokemon, IPokemonListElement } from "../models/pokemon";
 
+
+
 interface Props {
   pokemon: IPokemon | IPokemonListElement;
 }
