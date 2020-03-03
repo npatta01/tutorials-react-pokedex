@@ -7,13 +7,13 @@ export default class NavHeader extends React.Component {
   render() {
     return (
       <Navbar bg="dark" variant="dark">
-        <Navbar.Brand href="#home">PokeApi</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/">PokeApi</Navbar.Brand>
         <Nav className="mr-auto">
 
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/all">All</NavLink>
-          <NavLink to="/detail">Detail</NavLink>
+        <Nav.Link as={Link} to="/">Home</Nav.Link>
+        <Nav.Link as={Link} to="/about">About</Nav.Link>
+        <Nav.Link as={Link} to="/all">All</Nav.Link>
+        <Nav.Link as={Link} to="/detail">Detail</Nav.Link>
         </Nav>
       </Navbar>
     );
