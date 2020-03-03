@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import { Nav, Navbar } from "react-bootstrap";
+import { Link, NavLink } from "react-router-dom";
 
 export default class NavHeader extends React.Component {
   render() {
@@ -8,10 +9,11 @@ export default class NavHeader extends React.Component {
       <Navbar bg="dark" variant="dark">
         <Navbar.Brand href="#home">PokeApi</Navbar.Brand>
         <Nav className="mr-auto">
-          <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="/about">About</Nav.Link>
-          <Nav.Link href="/all">All</Nav.Link>
-          <Nav.Link href="/detail">Detail</Nav.Link>
+
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/about">About</NavLink>
+          <NavLink to="/all">All</NavLink>
+          <NavLink to="/detail">Detail</NavLink>
         </Nav>
       </Navbar>
     );
