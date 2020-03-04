@@ -1,20 +1,20 @@
 import * as React from "react";
-import { PokemonMockService } from "../services/PokemonMockService";
-import { IPokemonListElement } from "../models/pokemon";
+import { PokemonService } from "../services/PokemonService";
+import { IPokemonMini } from "../models/pokemon";
 import PokemonCard from "../components/PokemonCard";
 import styles from "./PokemonListDetailPage.module.css";
 
 
 interface IProps {}
 interface IState {
-  pokemons: IPokemonListElement[];
+  pokemons: IPokemonMini[];
 }
 export default class PokemonListDetailPage extends React.Component<
   IProps,
   IState
 > {
   async componentDidMount() {
-    const pokemons = await PokemonMockService.getPokemons();
+    const pokemons = await PokemonService.getPokemons();
 
     this.setState({ pokemons: pokemons });
   }
@@ -25,7 +25,7 @@ export default class PokemonListDetailPage extends React.Component<
 
     if (pokemons) {
       return (
-        <div>
+        <div className="container">
           <div className={styles.container}>
             {pokemons.map((p, index) => {
               return <PokemonCard key={index} pokemon={p} />;

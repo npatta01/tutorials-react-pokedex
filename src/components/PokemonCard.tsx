@@ -1,11 +1,12 @@
 import * as React from "react";
 import styles from "./PokemonCard.module.css";
-import { IPokemon, IPokemonListElement } from "../models/pokemon";
+import { IPokemonMini } from "../models/pokemon";
+import { Link } from "react-router-dom";
 
 
 
 interface Props {
-  pokemon: IPokemon | IPokemonListElement;
+  pokemon: IPokemonMini;
 }
 interface State {}
 
@@ -15,11 +16,12 @@ export default class PokemonCard extends React.Component<Props, State> {
     const { pokemon } = this.props;
     if (pokemon) {
       return (
-        <div className={styles.card}>
+        <div className={styles.card} >
           <h1 className={styles.title}>{pokemon.name}</h1>
           <div className={styles.image}>
-            <img src={pokemon.defaultImage} alt={pokemon.name} />
+            <img src={pokemon.image} alt={pokemon.name} />
           </div>
+          <Link to={`/detail/${pokemon.id}`}># {pokemon.id}</Link>
 
          
         </div>
