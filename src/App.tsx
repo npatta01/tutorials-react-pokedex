@@ -29,10 +29,10 @@ export default function App() {
         <NavHeader />
 
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={PokemonListDetailPage} />
           <Route exact path="/about" component={AboutPage} />
           <Route exact path="/all" component={PokemonListDetailPage} />
-          <Route exact path="/detail" component={PokemonDetailPage} />
+          <Route exact path="/detail/:id" component={PokemonDetailPage} />
         </Switch>
       </div>
     </Router>

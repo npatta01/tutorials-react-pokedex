@@ -1,0 +1,48 @@
+{
+    "base_happiness": 70,
+    "capture_rate": 45,
+    "color": {
+        "name": "green",
+        "url": "https://pokeapi.co/api/v2/pokemon-color/5/"
+    },
+    "egg_groups": [
+        {
+            "name": "plant",
+            "url": "https://pokeapi.co/api/v2/egg-group/7/"
+        },
+        {
+            "name": "monster",
+            "url": "https://pokeapi.co/api/v2/egg-group/1/"
+        }
+    ],
+    "evolution_chain": {
+        "url": "https://pokeapi.co/api/v2/evolution-chain/1/"
+    },
+    "evolves_from_species": null,
+    "flavor_text_entries": [
+        {
+            "flavor_text": "Bulbasaur can be seen napping in bright sunlight.\nThere is a seed on its back. By soaking up the sun’s rays,\nthe seed grows progressively larger.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "version": {
+                "name": "alpha-sapphire",
+                "url": "https://pokeapi.co/api/v2/version/26/"
+            }
+        },
+        {
+            "flavor_text": "Bulbasaur can be seen napping in bright sunlight.\nThere is a seed on its back. By soaking up the sun’s rays,\nthe seed grows progressively larger.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "version": {
+                "name": "omega-ruby",
+                "url": "https://pokeapi.co/api/v2/version/25/"
+            }
+        }
+    ]
+ 
+  
+}

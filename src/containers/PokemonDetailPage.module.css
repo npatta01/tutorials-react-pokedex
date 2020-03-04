@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.evolution {
+  display: flex;
+  justify-content: space-between;
+
+}
+.pageTitle{
+  text-align: center;
+}
+
+.abilities {
+  margin-top: 0.5em;
+}
+
+.types {
+  margin-top: 0.5em;
+
+}
+.pokemonProfile{
+  background-color: #F2F2F2;
+}

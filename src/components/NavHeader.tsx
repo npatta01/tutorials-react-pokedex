@@ -10,10 +10,9 @@ export default class NavHeader extends React.Component {
         <Navbar.Brand as={Link} to="/">PokeApi</Navbar.Brand>
         <Nav className="mr-auto">
 
-        <Nav.Link as={Link} to="/">Home</Nav.Link>
-        <Nav.Link as={Link} to="/about">About</Nav.Link>
-        <Nav.Link as={Link} to="/all">All</Nav.Link>
-        <Nav.Link as={Link} to="/detail">Detail</Nav.Link>
+          <Nav.Link as={Link} to="/">All</Nav.Link>
+          <Nav.Link as={Link} to="/detail/5">Detail</Nav.Link>
+          <Nav.Link as={Link} to="/about">About</Nav.Link>
         </Nav>
       </Navbar>
     );

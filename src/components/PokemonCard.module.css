@@ -32,5 +32,5 @@
   width: 100px;
 }
 .card img:hover {
-  transform: scale(2);
+  transform: scale(1.5);
 }
