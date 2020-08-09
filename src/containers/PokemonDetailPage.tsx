@@ -102,7 +102,7 @@ export default class PokemonDetailPage extends React.Component<IProps, IState> {
               <Row>
                 <Col>
                     <div className={styles.pokemonProfile}>
-                        <img src={pokemon.image} alt="image of pokemon"></img>
+                        <img src={pokemon.image} aria-hidden alt={`pokemon ${pokemon.name}`}></img>
 
                     </div>
                 </Col>
