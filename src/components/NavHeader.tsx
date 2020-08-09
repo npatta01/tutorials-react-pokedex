@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import { Nav, Navbar } from "react-bootstrap";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default class NavHeader extends React.Component {
   render() {

@@ -1,6 +1,6 @@
 import * as React from "react";
 import { PokemonService } from "../services/PokemonService";
-import { IRawPokemon, IPokemon } from "../models/pokemon";
+import {  IPokemon } from "../models/pokemon";
 import PokemonCard from "../components/PokemonCard";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { RouteComponentProps } from "react-router-dom";
@@ -102,7 +102,7 @@ export default class PokemonDetailPage extends React.Component<IProps, IState> {
               <Row>
                 <Col>
                     <div className={styles.pokemonProfile}>
-                        <img src={pokemon.image}></img>
+                        <img src={pokemon.image} alt="image of pokemon"></img>
 
                     </div>
                 </Col>

@@ -17,9 +17,6 @@ import {
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function Home() {
-  return <h2>Home</h2>;
-}
 
 export default function App() {
   return (
