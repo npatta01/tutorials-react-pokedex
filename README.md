@@ -9,6 +9,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ![Demo](assets/demo.gif)
 
+Hosted as a static site on github pages
+
+https://npatta01.github.io/tutorials-react-pokedex/
+
 ## Available Scripts
 
 In the project directory, you can run:
